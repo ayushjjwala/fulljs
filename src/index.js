@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import axios from 'axios';
 
-ReactDOM.render(
-    <App />,
+ReactDOM.hydrate(
+    <App initialContests={window.initialData.contests} />,
     document.getElementById('root')
 );
