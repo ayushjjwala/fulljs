@@ -22,7 +22,7 @@ class App extends React.Component {
                 currentContestId: (event.state || {}).currentContestId
             })
         });
-    }
+    } 
     componentWillUnmount() {
         onPopState(null);
     }
