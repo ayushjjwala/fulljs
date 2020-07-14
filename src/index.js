@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import axios from 'axios';
 
 ReactDOM.hydrate(
-    <App initialContests={window.initialData.contests} />,
+    <App initialData={window.initialData} />,
     document.getElementById('root')
 );
